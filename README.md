@@ -39,7 +39,7 @@ The application on the backend uses PyPgx to call star alleles for the pharmaco-
 3. pip install -r requirements.txt
 4. Download the ref genome using:
 
--- wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/phase2_reference_assembly_sequence/hs37d5.fa.gz
+`-- wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/phase2_reference_assembly_sequence/hs37d5.fa.gz`
 
 After unizipping : samtools faidx ref.fasta
 
