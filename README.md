@@ -41,7 +41,7 @@ The application on the backend uses PyPgx to call star alleles for the pharmaco-
 
 `-- wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/phase2_reference_assembly_sequence/hs37d5.fa.gz`
 
-After unizipping : samtools faidx ref.fasta
+After unizipping : `samtools faidx ref.fasta`
 
 Store this in the root directory
 5. The sample 23andme files can be found at : https://my.pgp-hms.org/public_genetic_data?utf8=%E2%9C%93&data_type=23andMe&commit=Search 
