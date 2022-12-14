@@ -1,0 +1,118 @@
+<Html>
+
+<head>
+  <script type="text/javascript">// <![CDATA[
+  function loading(){
+    console.log(" Submitted! ") 
+      var vv =document.getElementsByClassName("loading")
+      console.log(vv)
+      vv.style.display=="block";
+      console.log(document.getElementById("loading"))
+      document.getElementById("content").style.display=="none";       
+  }
+</script>
+<style>
+  div#loading {
+    width: 100px;
+    height: 100px;
+    display: none;
+    cursor: wait;
+    }
+    div#content {
+    display: block;
+    }
+  
+</style>
+</head>
+<body>
+{% extends "layout.html" %}
+{% block content %}
+
+
+
+  <div id="loading" class="loading">
+    <img src="{{url_for('static', filename='Youtube_loading_symbol_1_(wobbly).gif')}}" align="middle" />
+  </div>
+  <div id="content">
+      <h3 align="center"><b>Instructions</b></h2>
+      <h2 align="center"><b>1) Please upload files in the following format (.vcf)</b></h2>
+      <h2 align="center"><b>2) Please enter complete vcf file from WGS or WES</b></h2>
+      
+    <form input type="hidden" name="myform" action="{{ url_for('predict')}}" method="post" enctype="multipart/form-data">
+        
+  <label for="Drugs">Choose a Drug:</label>
+  <select name="drug" id="drug" required>
+    <option     value=  'nortriptyline'>nortriptyline</option>
+    <option     value=  'sertraline'>sertraline</option>
+    <option     value=  'atorvastatin'> atorvastatin</option>
+    <option     value=  'succinylcholine'>succinylcholine</option>
+    <option     value=   'tamoxifen'>tamoxifen</option>
+    <option     value=  'methoxyflurane'>methoxyflurane</option>
+    <option     value=  'meloxicam'>meloxicam</option>
+    <option     value=   'thioguanine'> thioguanine</option>
+    <option     value=  'ondansetron'>ondansetron</option>
+    <option     value=  'fluvoxamine'>fluvoxamine</option>
+    <option     value=   'halothane'>halothane</option>
+    <option     value=  'atomoxetine'>atomoxetine</option>
+    <option     value=  'tenoxicam'>tenoxicam</option>
+    <option     value=  'ribavirin'>    ribavirin</option>
+    <option     value=  'clomipramine'>clomipramine</option>
+    <option     value=   'peginterferon alfa-2a'>       peginterferon alfa-2a</option>
+    <option     value=  'dexlansoprazole'>dexlansoprazole</option>
+    <option     value=  'fluorouracil'> fluorouracil</option>
+    <option     value=  'omeprazole'>   omeprazole</option>
+    <option     value=   'amitriptyline'>       amitriptyline</option>
+    <option     value=  'celecoxib'>    celecoxib</option>
+    <option     value=  'rosuvastatin'> rosuvastatin</option>
+    <option     value=   'fluvastatin'> fluvastatin</option>
+    <option     value=   'tropisetron'> tropisetron</option>
+    <option     value=  'doxepin'>doxepin</option>
+    <option     value=   'hormonal contraceptives for systemic use'>    hormonal contraceptives for systemic use'</option>
+    <option     value=   'flurbiprofen'>flurbiprofen</option>  
+    <option     value=  'ivacaftor'>ivacaftor</option>
+    <option     value=  'tramadol'>tramadol</option>
+    <option     value=  'pravastatin'>pravastatin</option>
+    <option     value=  'sevoflurane'   >sevoflurane</option>
+    <option     value=   'hydrocodone'> hydrocodone</option>
+    <option     value=  'citalopram'>   citalopram</option>
+    <option     value=   'lansoprazole'>lansoprazole</option>
+    <option     value=   'enflurane'>   enflurane</option>
+    <option     value=  'ibuprofen'>ibuprofen</option>
+    <option     value=   'escitalopram'>escitalopram</option>
+    <option     value=  'mercaptopurine'>mercaptopurine</option>
+    <option     value=   'lornoxicam'>lornoxicam</option>
+    <option     value=  'desipramine'>desipramine</option>
+    <option     value=   'imipramine'>imipramine        </option>
+    <option     value=   'codeine'>codeine</option>
+    <option     value=  'piroxicam'     >piroxicam</option>
+    <option     value=  'azathioprine'> azathioprine</option>
+    <option     value=   'isoflurane'>  isoflurane</option>
+    <option     value=   'lovastatin'   >       lovastatin</option>
+    <option     value=  'pitavastatin'  >       pitavastatin</option>
+    <option     value=  'paroxetine'>   paroxetine      </option>
+    <option     value=  'desflurane'    >       desflurane      </option>
+    <option     value=  'trimipramine'  >       trimipramine    </option>
+    <option     value=  'simvastatin'   >       simvastatin     </option>
+    <option     value=  'capecitabine'  >       capecitabine    </option>
+    <option     value=   'voriconazole' >        voriconazole   </option>
+    <option     value=  'atazanavir'    >       atazanavir      </option>
+    <option     value=   'tacrolimus'   >        tacrolimus     </option>
+    <option     value=   'efavirenz'    >        efavirenz      </option>
+    <option     value=   'pantoprazole' >        pantoprazole   </option>
+    <option     value=  'clopidogrel'   >       clopidogrel     </option>
+  </select>
+  <br><br>
+
+  <p><input type="file" name= "file" accept=".gz" required>
+
+  <br><br>
+  
+  <input type="submit" value="Submit" onClick=loading()>
+
+</form>
+</div>
+{% endblock %}
+<br>
+<br>     
+</body>                                                
+</Html>
