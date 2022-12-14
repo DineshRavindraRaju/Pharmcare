@@ -37,6 +37,7 @@ The application on the backend uses PyPgx to call star alleles for the pharmaco-
 2. git clone https://github.com/sbslee/pypgx-bundle.git (in your home directory)
 
 3. pip install -r requirements.txt
+4. The sample 23andme files can be found at : https://my.pgp-hms.org/public_genetic_data?utf8=%E2%9C%93&data_type=23andMe&commit=Search 
 
 
 # Interface
@@ -44,7 +45,9 @@ The application on the backend uses PyPgx to call star alleles for the pharmaco-
 ![alt text](assets/image1.png)
 ![alt text](assets/image2.png)
 
-The user interface takes in the vcf file (in .gz , .vcf format) and the drug of interest (from the drop down list) and eventually outputs whether the drug can be taken or not, along with the clinical recommendations in the database.
+The user interface takes in the vcf file (in .gz , .vcf format,.txt(23andme), .txt.gz (23andme)) and the drug of interest (from the drop down list) and eventually outputs whether the drug can be taken or not, along with the clinical recommendations in the database.
+
+
 
 # Disclaimer
 
