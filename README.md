@@ -69,4 +69,5 @@ We understand that your genetics are very personal, so we reject any use of gene
 
 
 
-# Pharmcare
+# Contact Us
+Dinesh Ravindra Raju: draju8@gatech.edu ; Piyus Mohanty : pmohanty@gatech.edu ; Mannan bhola : mbhola@gatech.edu
