@@ -32,11 +32,12 @@ The application on the backend uses PyPgx to call star alleles for the pharmaco-
 
 
 # Requirement Installation
-1. git clone  https://github.com/docmab23/Pharmacogenomics-Deepvariant.git
+1. git clone  git@github.com:DineshRavindraRaju/Pharmcare.git
 
 2. git clone https://github.com/sbslee/pypgx-bundle.git (in your home directory)
 
 3. pip install -r requirements.txt
+
 4. Download the ref genome using:
 `-- wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/phase2_reference_assembly_sequence/hs37d5.fa.gz`
 After unizipping : `samtools faidx ref.fasta`   Store this in the root directory
